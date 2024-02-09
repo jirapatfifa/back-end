@@ -24,13 +24,14 @@ const init = async () => {
         port: api_port,
         host: '0.0.0.0',
         routes: {
-            "cors": true
-            //"cors": {
-            //    "origin": ["Access-Control-Allow-Origin", "https://localhost:4000"],
-             //   "headers": ["Accept", "Content-Type"],
-              //  "additionalHeaders": ["X-Requested-With"]
-           // }
+            //cors: true
+            "cors": {
+                "origin": ["Access-Control-Allow-Origin", "192.168.179.111:3000"],
+                "headers": ["Accept", "Content-Type"],
+                "additionalHeaders": ["X-Requested-With"]
+            }
         }
+
     });
 
     //---------
@@ -82,7 +83,6 @@ const init = async () => {
                 origin: ['*'],
                 additionalHeaders: ['cache-control', 'x-requested-width'],
                 credentials: true
-
             }
         },
         handler: () => {
@@ -97,8 +97,7 @@ const init = async () => {
         config: {
             cors: {
                 origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-width'],
-                credentials: true
+                additionalHeaders: ['cache-control', 'x-requested-width']
             }
         },
         handler: async function (request, reply) {
@@ -129,8 +128,7 @@ const init = async () => {
         config: {
             cors: {
                 origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-width'],
-                credentials: true
+                additionalHeaders: ['cache-control', 'x-requested-width']
             }
         },
         handler: async function (request, reply) {
@@ -174,8 +172,7 @@ const init = async () => {
             },
             cors: {
                 origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-width'],
-                credentials: true
+                additionalHeaders: ['cache-control', 'x-requested-width']
             }
         },
         handler: async function (request, reply) {
