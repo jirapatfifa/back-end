@@ -78,7 +78,7 @@ const init = async () => {
       path: '/api/movie/search',
       config: {
           cors: {
-              origin: ['http://localhost:3001'],
+              origin: ['*'],
               additionalHeaders: ['cache-control', 'x-requested-width']
           }
       },
