@@ -26,9 +26,9 @@ const init = async () => {
         routes: {
             "cors": true
             //"cors": {
-            //    "origin": ["Access-Control-Allow-Origin", "https://localhost:4000"],
-             //   "headers": ["Accept", "Content-Type"],
-              //  "additionalHeaders": ["X-Requested-With"]
+                //"origin": ["Access-Control-Allow-Origin", "https://localhost:4000"],
+                //"headers": ["Accept", "Content-Type"],
+                //"additionalHeaders": ["X-Requested-With"]
            // }
         }
     });
